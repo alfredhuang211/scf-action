@@ -1,0 +1,16 @@
+component: scf # (必选) 组件名称，固定scf
+name: ap-guangzhou_default_testgithub_action # (必选) region_namespace_functionName
+org: alfred # (可选) 用于记录组织信息，默认值为您的腾讯云账户 appid
+app: scf-action # (可选) 用于记录组织信息. 默认函数名
+stage: dev  # (可选) 用于区分环境信息，默认值 dev
+
+inputs:
+  name: testFunction # (必选) 函数名
+  enableRoleAuth: true #（可选）
+  # 默认写法，新建特定命名的 cos bucket 并上传
+  src: ./src # (必选) 默认./src
+  handler: index.main # (必选) handler
+  runtime: Python3.6 # (必选) 
+  region: ap-guangzhou # (必选) 
+  description: Function create by github action # (可选) 
+  memorySize: 128 # (必选) 

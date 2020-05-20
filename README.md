@@ -1,2 +1,3 @@
 # scf-action
-set action for scf
+
+To test github action to deploy tencent scf function.
